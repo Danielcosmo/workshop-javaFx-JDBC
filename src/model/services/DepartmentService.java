@@ -13,4 +13,11 @@ public class DepartmentService {
 	public List<Department> findAll(){
 		return dpDao.findAll();
 	}
+	public void saveOrUpdate(Department dp) {
+		if(dp.getId() == null) {
+			dpDao.insert(dp);
+		}else {
+			dpDao.update(dp);
+		}
+	}
 }
