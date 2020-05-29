@@ -79,6 +79,7 @@ public class DepartmentDaoImpl implements DepartmentDao{
 			st.executeUpdate();
 
 		} catch (SQLException e) {
+			
 			throw new DbException(e.getMessage());
 		} finally {
 			DB.closeStatement(st);

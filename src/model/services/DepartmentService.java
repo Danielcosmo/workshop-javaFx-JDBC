@@ -20,4 +20,7 @@ public class DepartmentService {
 			dpDao.update(dp);
 		}
 	}
+	public void remove(Department dp) {
+		dpDao.deleteById(dp.getId());
+	}
 }
