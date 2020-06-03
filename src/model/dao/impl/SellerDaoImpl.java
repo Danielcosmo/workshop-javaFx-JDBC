@@ -212,7 +212,7 @@ public class SellerDaoImpl implements SellerDao {
 		s.setName(rs.getString("Name"));
 		s.setEmail(rs.getString("Email"));
 		s.setBaseSalary(rs.getDouble("BaseSalary"));
-		s.setBirthDate(rs.getDate("BirthDate"));
+		s.setBirthDate(new java.util.Date(rs.getTimestamp("BirthDate").getTime()));
 		s.setDepartment(dp);
 		return s;
 	}

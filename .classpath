@@ -6,12 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ConexaoMysql">
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFx">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx">
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MysqlConnector">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
