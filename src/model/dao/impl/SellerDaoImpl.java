@@ -64,9 +64,7 @@ public class SellerDaoImpl implements SellerDao {
 		PreparedStatement st = null;
 
 		try {
-			st = conn.prepareStatement("UPDATE seller "
-					+ "SET Name = ?, SET Email = ?, SET BirthDate = ?, SET BaseSalary = ?, SET DepartmentId = ?"
-					+ "WHERE Id = ?");
+			st = conn.prepareStatement("UPDATE `estudoJava`.`seller` SET `Name`= ?, `Email`=?, `BirthDate`= ? , `BaseSalary`= ? , `DepartmentId`= ? WHERE `Id`= ?;");
 			st.setString(1, s.getName());
 			st.setString(2, s.getEmail());
 			st.setDate(3, new java.sql.Date(s.getBirthDate().getTime()));
